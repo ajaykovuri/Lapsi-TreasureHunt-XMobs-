@@ -1,4 +1,4 @@
-package main_package;
+package scripts;
 
 import java.net.URL;
 import java.sql.Time;

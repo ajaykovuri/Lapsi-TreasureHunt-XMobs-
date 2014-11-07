@@ -1,4 +1,4 @@
-package main_package;
+package scripts;
 
 import io.selendroid.SelendroidCapabilities;
 import io.selendroid.SelendroidConfiguration;
