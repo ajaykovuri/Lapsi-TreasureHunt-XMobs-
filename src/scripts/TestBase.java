@@ -53,8 +53,7 @@ public class TestBase {
 	public String Basedir = System.getProperty("user.dir");
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public SelendroidLauncher selendroidServer = null;
-	  	 
-
+	
   @BeforeSuite
   public void BeforeSuite() throws Exception{
   config = new Properties();
@@ -63,7 +62,6 @@ public class TestBase {
   config.load(fp);
   FileInputStream fp1 = new FileInputStream(Basedir + "\\src\\ConfigFiles\\OR.properties");
   OR.load(fp1);
-	
     if (selendroidServer != null) {
     selendroidServer.stopSelendroid();
     }
@@ -76,17 +74,9 @@ public class TestBase {
     capa.setLaunchActivity("com.nexii.treasurehunt.SplashScreen");
     capa.setBrowserName("selendroid");
     capa.setPlatform(Platform.ANDROID);
-    capa.setSerial("0123456789ABCDEF");
+//    capa.setSerial("0123456789ABCDEF");
     capa.setEmulator(false);
     driver = new SelendroidDriver(capa);
-    Thread.sleep(5000);
-    //searching for signin button
-    List<WebElement> signin = driver.findElements(By.id("btn_sign_in"));
-    if(signin.size()!=0)
-    	//clicking on signin if exists
-    driver.findElement(By.id("btn_sign_in")).click();
-    Thread.sleep(3000);
-
-    
+ 
   } 
 }

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -50,20 +51,24 @@ public class Helper extends TestBase {
 			e.printStackTrace();
 		}
 	  }
-	public void iterator_click(String locator){
+	public void iteratorClick(String locator){
 		   List<WebElement> list = driver.findElements(By.id(locator));
 		   Iterator<WebElement> iterator = list.iterator();
 		   
 		   while(iterator.hasNext())
 				iterator.next().click();
 	   }
-	public void random_click(List<WebElement> list, int k){
-		   //List<WebElement> list = driver.findElements(By.id(locator));
-		   //random = new Random();
-		   for (int j = 0; j < k; j++){
-			   int i = random.nextInt(list.size());
-			   list.get(i).click();
-		   }
+		   
+	public void signIn(){
+		sleep(5);
+	    //searching for signin button
+	    List<WebElement> signin = driver.findElements(By.id("btn_sign_in"));
+	    if(signin.size()!=0)
+	    	//clicking on signin if exists
+	    driver.findElement(By.id("btn_sign_in")).click();
+	    sleep(3);
+
+	}
 }
-}
+
 

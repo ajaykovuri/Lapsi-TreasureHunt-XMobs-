@@ -25,12 +25,10 @@ import testUtils.Helper;
 public class CreateAndScheduleGame extends Helper {
 	  DateFormat dateFormat = new SimpleDateFormat("yymmddHHmmss");
 	  Date date = new Date();
-	
 	  String app_name = "Ajay test "+dateFormat.format(date);
 	  @Test(invocationCount =1)
-	  public void  Create_Game() throws Exception {
-	
-    //clicking on create a game
+	public void  Create_Game() throws Exception {
+	//clicking on create a game
     driver.findElement(By.id("btn_create_game")).click();
     //entering game name
     driver.findElement(By.id("et_game_name")).sendKeys(app_name);
@@ -38,7 +36,7 @@ public class CreateAndScheduleGame extends Helper {
     //entering game description
     driver.findElement(By.id("et_game_desc")).sendKeys(" Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  Ajay game description 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890");
      //entering the first note name
-//    driver.findElement(By.id("et_first_note")).sendKeys("First note hint");
+//  driver.findElement(By.id("et_first_note")).sendKeys("First note hint");
     //hiding the keypad
     driver.navigate().back();    
     Thread.sleep(2000);
