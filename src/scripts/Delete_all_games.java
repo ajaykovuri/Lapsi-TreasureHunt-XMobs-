@@ -22,7 +22,8 @@ public class Delete_all_games {
 	  
 	  //edited by ameer naveed
 	  // edited second time
-	  // edited third tim
+	  // edited third time
+	  // edited fourth time
 	  
 	  @Test(invocationCount = 2)
 	  public void Delete_AllGames() throws Exception {
