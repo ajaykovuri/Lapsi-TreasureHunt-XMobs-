@@ -20,7 +20,7 @@ public class Delete_all_games {
 	  public WebDriver driver = null;
 	  public String Basedir = System.getProperty("user.dir");
 	  
-	  //edited by ameer
+	  //edited by ameer naveed
 	  
 	  @Test(invocationCount = 2)
 	  public void Delete_AllGames() throws Exception {
