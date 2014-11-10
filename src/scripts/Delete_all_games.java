@@ -19,6 +19,9 @@ public class Delete_all_games {
 	public SelendroidLauncher selendroidServer = null;
 	  public WebDriver driver = null;
 	  public String Basedir = System.getProperty("user.dir");
+	  
+	  //edited by ameer
+	  
 	  @Test(invocationCount = 2)
 	  public void Delete_AllGames() throws Exception {
 		if (selendroidServer != null) {
