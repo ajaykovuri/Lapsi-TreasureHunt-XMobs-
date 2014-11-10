@@ -21,6 +21,7 @@ public class Delete_all_games {
 	  public String Basedir = System.getProperty("user.dir");
 	  
 	  //edited by ameer naveed
+	  // edited second time
 	  
 	  @Test(invocationCount = 2)
 	  public void Delete_AllGames() throws Exception {
