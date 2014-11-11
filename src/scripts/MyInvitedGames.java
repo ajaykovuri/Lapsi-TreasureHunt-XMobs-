@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
 import testUtils.Helper;
 
 
-//changes2
+//changes2 
 
 public class MyInvitedGames extends Helper{
   @Test
